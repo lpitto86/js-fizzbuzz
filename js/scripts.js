@@ -1,12 +1,15 @@
 const rowContainer = document.getElementById('rowContainer');
 
-        for (let i = 1; i <= 100; i++) {
-            const cell = document.createElement('div');
-            cell.className = 'cell';
+for (let i = 1; i <= 7; i++) {
+    const column = document.createElement('div');
+    column.className = 'column';
 
-            // Imposta il testo della cella
-            cell.textContent = i;
+    for (let j = i; j <= 100; j += 7) {
+        const cell = document.createElement('div');
+        cell.className = 'cell';
+        cell.textContent = j;
+        column.appendChild(cell);
+    }
 
-            // Aggiungi la cella al contenitore della riga
-            rowContainer.appendChild(cell);
-        }
+    rowContainer.appendChild(column);
+}
