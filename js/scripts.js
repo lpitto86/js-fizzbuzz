@@ -1,6 +1,6 @@
 const rowContainer = document.getElementById('rowContainer');
 
-        for (let i = 1; i <= 7; i++) {
+        for (let i = 1; i <= 100; i++) {
             const cell = document.createElement('div');
             cell.className = 'cell';
 
